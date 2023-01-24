@@ -1,0 +1,7 @@
+1. Auth - user, -id
+2. Blog -> title, description, Fk - user_id (one to many)
+3. Comment -> comment, Fk - user_id, blog_id
+
+models, comtroller, routes
+
+We write toJSON:vituaals : true only whne you need to get virtual and not only set
