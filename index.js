@@ -9,8 +9,9 @@ const server = express();
 server.use(cors());
 server.use(bodyParser.json());
 
+// jiyarora, blog_g16
 //DB Connection
-mongoose.connect("mongodb://localhost:27017/blog_g16");  //127.0.0.0 , 0.0.0.0 -> localhost
+mongoose.connect("mongodb+srv://jiya:jiyarora@cluster0.bvuztb8.mongodb.net/blog_g16?retryWrites=true&w=majority6");  //127.0.0.0 , 0.0.0.0 -> localhost
 mongoose.connection.on("connected", () => {
     console.log("DB Connected");
 })
